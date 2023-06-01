@@ -10,19 +10,33 @@
 <body>
     <main class="cont-main">
         <div class="card-pergunda">
-            <h1 id="1" >Pergunta</h1>
-            <button onclick="selectOption('option-1', '1')" id="option-1" class="option-select-off">
-                Opção 1
-            </button>
-            <button onclick="selectOption('option-2', '2')" id="option-2" class="option-select-off">
-                Opção 2
-            </button>
-            <button onclick="selectOption('option-3', '3')" id="option-3" class="option-select-off">
-                Opção 3
-            </button>
-            <button onclick="selectOption('option-4', '4')" id="option-4" class="option-select-off">
-                Opção 4
-            </button>
+            <h1 id="1" >Qual desses personagens fazem parte do desenho As Aventuras de Jackie Chan ?</h1>
+            <div class="cont-options">
+                <div class="cont-option">
+                    <img class="image-option">
+                    <button onclick="selectOption('option-1', '1')" id="option-1" class="option-select-off">
+                        Tohru
+                    </button>
+                </div>
+                <div class="cont-option">
+                    <img class="image-option" src="./assets/images/option-2-1.jpg">
+                    <button onclick="selectOption('option-2', '2')" id="option-2" class="option-select-off">
+                        Ino
+                    </button>
+                </div>
+                <div class="cont-option">
+                    <img class="image-option" src="./assets/images/option1-1.jpg">
+                    <button onclick="selectOption('option-3', '3')" id="option-3" class="option-select-off">
+                        Tohru
+                    </button>
+                </div>
+                <div class="cont-option">
+                    <img class="image-option" src="./assets/images/optio-3-1.jpg">
+                    <button onclick="selectOption('option-4', '4')" id="option-4" class="option-select-off">
+                        Kitty
+                    </button>
+                </div>
+            </div>
             <button onclick="resposta(1)" class="button-resp" id="buttonResp">
                 Responder
             </button>

@@ -4,8 +4,7 @@
     border: 0px;
 }
 body{
-    background-image: url('./assets/images/background-home.png');
-    background-size: 100% 100%;
+   background-color: rgb(185, 129, 46);
 }
 
 .cont-main{
@@ -17,21 +16,44 @@ body{
     height: 100vh;
 }
 
+.cont-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    height: 28rem;
+}
+
+.cont-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+}
+
+.image-option{
+    width: 50%;
+    height: 80%;
+}
 
 .card-pergunda{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:40%;
-    height: 20rem;
+    padding: 20px;
+    width:60%;
+    height: 40rem;
     border: 0.1px solid rgb(30, 101, 202);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.61);
 }
 
 .button-resp{
-    width: 10rem;
-    height: 8rem;
+    width: 9rem;
+    height: 2.5rem;
 
     border-radius: 15px;
     border: 1px solid black;
@@ -41,7 +63,7 @@ body{
 /* Botão das opções */
 .option-select-off{
     width: 10rem;
-    height: 5rem;
+    height: 2.4rem;
 
     background-color: transparent;
     border-radius: 15px;
