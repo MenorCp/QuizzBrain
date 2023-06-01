@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <title>
+        Quiz Brain
+    </title>
+</head>
+<body>
+    <main class="cont-main">
+        <div class="card-pergunda">
+            <h1 id="1" >Pergunta</h1>
+            <button onclick="selectOption('option-1', '1')" id="option-1" class="option-select-off">
+                Opção 1
+            </button>
+            <button onclick="selectOption('option-2', '2')" id="option-2" class="option-select-off">
+                Opção 2
+            </button>
+            <button onclick="selectOption('option-3', '3')" id="option-3" class="option-select-off">
+                Opção 3
+            </button>
+            <button onclick="selectOption('option-4', '4')" id="option-4" class="option-select-off">
+                Opção 4
+            </button>
+            <button onclick="resposta(1)" class="button-resp" id="buttonResp">
+                Responder
+            </button>
+            <p id="acert" class="acertos">
+                Acertos: 0
+            </p>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
