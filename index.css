@@ -3,82 +3,93 @@
     margin: 0px;
     border: 0px;
 }
-body{
-   background-color: rgb(185, 129, 46);
-}
 
 .cont-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('./assets/images/background-inicio.jpg');
+    background-size: 100%;
+}
+
+.cont-info-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+    height: 12rem;
+}
+
+.cont-text-logo{
+    width: 25rem;
+    height: 8rem;
+}
+
+.text-logo{
+    font-family: 'Palanquin';
+    font-size: 52px;
+    font-weight: 400;
+    height: 5rem;
+    color: #5B1CE1;
+    pointer-events: none;
+}
+
+.phrase-logo{
+    font-family: 'Palanquin';
+    font-size: 25px;
+    font-weight: 500;
+    height: 3rem;
+    color: #5B1CE1;
+    pointer-events: none;
+}
+
+.cont-acess-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
+    width: 20rem;
+    height: 9rem;
 }
 
-.cont-options{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 90%;
-    height: 28rem;
-}
-
-.cont-option{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    height: 50%;
-}
-
-.image-option{
-    width: 50%;
-    height: 80%;
-}
-
-.card-pergunda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width:60%;
-    height: 40rem;
-    border: 0.1px solid rgb(30, 101, 202);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.61);
-}
-
-.button-resp{
-    width: 9rem;
-    height: 2.5rem;
-
-    border-radius: 15px;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-/* Botão das opções */
-.option-select-off{
-    width: 10rem;
-    height: 2.4rem;
+.link-acess-page{
+    width: 3rem;
+    height: 3rem;
 
     background-color: transparent;
-    border-radius: 15px;
-    border: 1px solid black;
-    user-select: none;
+    background-image: url('./assets/images/logo-acess.svg');
+    background-size: 100% 100%;
     cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: -5px;
 }
-.option-select-on{
-    width: 10rem;
-    height: 5rem;
 
-    background-color: transparent;
-    border-radius: 15px;
-    border: 1px solid black;
-    background-color: blueviolet;
-    user-select: none;
-    cursor: pointer;
+.phrase-acess{
+    font-family: 'Palanquin';
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    color: #5B1CE1;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.link-acess-page:hover{
+    width: 3.1rem;
+    height: 3.1rem;
+    margin-bottom: -6px;
+
+    background-image: url('./assets/images/logo-acess-on.svg');
+}
+
+.link-acess-page:hover + .phrase-acess{
+    font-size: 24px;
+    color: #4114A1;
+    text-decoration: underline;
+    pointer-events: all;
 }
