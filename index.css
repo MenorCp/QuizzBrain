@@ -21,13 +21,50 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 76%;
+    width: 80rem;
     height: 12rem;
+    border: 0.1px solid black;
 }
 
 .cont-text-logo{
-    width: 25rem;
-    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 29rem;
+    height: 10rem;
+    border: 0.1px solid black;
+}
+
+.cont-aviator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 10rem;
+
+    border: 0.1px solid black;
+}
+
+.aviator-icon{
+    width: 50%;
+    height: 100%;
+
+    cursor: pointer;
+    background-image: url('./assets/images/logo-page.svg');
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+.cont-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 10rem;
+
+    border: 0.1px solid black;
 }
 
 .text-logo{
@@ -55,6 +92,8 @@
     justify-content: center;
     width: 20rem;
     height: 9rem;
+
+    border: 0.1px solid black;
 }
 
 .link-acess-page{
@@ -67,6 +106,8 @@
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: -5px;
+
+    border: 0.1px solid black;
 }
 
 .phrase-acess{
@@ -77,6 +118,8 @@
     color: #5B1CE1;
     transition: 0.3s;
     pointer-events: none;
+
+    border: 0.1px solid black;
 }
 
 .link-acess-page:hover{
